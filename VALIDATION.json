@@ -1,1 +1,184 @@
-{"tests":{"executedAt":"2026-11-16T08:28:06.541Z","node":"v24.20.0","suites":27,"tests":154,"passed":154,"failed":0,"skipped":0,"exitCode":0,"scope":["Extracted Korean data and 24,737 script instructions","Original-function differential fixtures for dice, new-game placement, navigation, supplies, combat, economics and script arithmetic","Independent navigation, trading, supply/unloading, shipyard, recruitment, appointments, equipment, contracts, gambling, battle, spoils and save/restore","Six original story endings with test-supplied travel, fame and battle prerequisites","Seven royal quest families, debt collection and actual A* sea travel","All 130 port arrivals and 889 building paths"],"limits":["Tests of story endings supply progression prerequisites; these are not six complete human playthroughs.","NPC global routing and offscreen combat use independent pathfinding and scheduling; they are not instruction-identical to the DOS runtime.","Original-function comparisons validate recorded inputs only, not every possible game state.","All 101 town layouts were reviewed in an overview gallery; exhaustive dialogue and form bounds were checked in a browser harness. This does not cover every device.","Android emulator and responsive UI observations are recorded separately in manual-verification.json."],"command":"node --test --test-reporter=tap analysis.test.mjs battle-grid.test.mjs battle-spoils.test.mjs blackjack.test.mjs building-hours.test.mjs combat.test.mjs consumption.test.mjs dice.test.mjs duel-session.test.mjs economy.test.mjs game.test.mjs integration-regressions.test.mjs national-affairs.test.mjs naval-battle.test.mjs navigation-global.test.mjs navigation-playthrough.test.mjs navigation.test.mjs new-game.test.mjs port-services.test.mjs royal-quests.test.mjs shared-quests.test.mjs shipyard.test.mjs shore.test.mjs story-endings.test.mjs story-playthrough.test.mjs story-vm.test.mjs voyage-systems.test.mjs"},"apk":{"time":"2026-11-16T08:27:22.3941601Z","apkBytes":25488316,"sha256":"CF83CF6F7DA715982736DD2CFD2B9AB5670E79A19693823B7D5114CBB301C930","entryCount":95,"verifiedWebAssets":88,"forbiddenEntries":0,"assetMismatches":0,"containsDex":true,"package":"kr.voyage.independent","version":"1.0.1","minAndroid":26,"networkPermission":false,"nativeInstallScope":"Native installation and play observations, with tested APK hash, are recorded separately in manual-verification.json."},"manual":{"checkedAt":"2026-11-16T08:33:40.584Z","version":"1.0.1","apkSha256":"CF83CF6F7DA715982736DD2CFD2B9AB5670E79A19693823B7D5114CBB301C930","android":{"platform":"MuMu Android emulator on Windows","installed":true,"physicalPhoneTested":false,"observations":["Installed the updated APK and observed the 1.0.1 title screen.","Swiped the save list down and up; the title and close button remained fixed.","Loaded the existing Otto save: London, 17 May 1522 08:40, 300 gold. No new game or data reset.","London market showed buy, sell and investment completely, alongside the permanent exit button. All four dock labels were visible.","Tapped the formerly clipped investment action. Swiped vertically starting on the table and reached the quantity, MAX and investment confirmation controls.","Closed the investment form without spending gold and returned to the market."]},"browser":{"viewports":[[320,568],[390,844],[568,320],[741,377],[844,390]],"perViewport":{"ports":130,"facilities":889,"messages":4302,"forms":94},"method":"Rendered the actual application components; inspected viewport bounds, portrait ratio, option dimensions and scroll reachability, including ancestor touch-action restrictions.","observations":["At 320×568, used the pub’s below-menu button to scroll to the last option; last option was fully visible and the exit remained fixed."]},"limits":["The five viewport checks are automated DOM geometry checks, not a manual reading of every dialogue.","The current Android session validates installation, save restore, market layout and touch scrolling; it is not six complete campaign playthroughs.","No physical Android phone was tested."]},"screens":[{"viewport":[320,568],"messages":4302,"facilities":889,"towns":130,"errors":[],"portraits":128,"forms":94,"scrollableFacilities":100,"p95RenderMs":0.699999988079071,"maxRenderMs":120.19999998807907,"durationMs":3801.600000023842},{"viewport":[390,844],"messages":4302,"facilities":889,"towns":130,"errors":[],"portraits":128,"forms":94,"p95RenderMs":0.40000003576278687,"maxRenderMs":15,"durationMs":2919.199999988079},{"viewport":[568,320],"messages":4302,"facilities":889,"towns":130,"errors":[],"portraits":128,"forms":94,"scrollableFacilities":100,"p95RenderMs":0.6000000238418579,"maxRenderMs":72.19999998807907,"durationMs":3542},{"viewport":[741,377],"messages":4302,"facilities":889,"towns":130,"errors":[],"portraits":128,"forms":94,"p95RenderMs":0.699999988079071,"maxRenderMs":31.5,"durationMs":3715.899999976158},{"viewport":[844,390],"messages":4302,"facilities":889,"towns":130,"errors":[],"portraits":128,"forms":94,"p95RenderMs":0.5,"maxRenderMs":67.59999996423721,"durationMs":3322}]}
+{
+  "version": "1.0.2",
+  "apk": {
+    "time": "2026-11-16T08:56:46.2019952Z",
+    "apkBytes": 25492554,
+    "sha256": "8BE2706442563ED8D456FD147533D096A85494DEC750E9A526BB3E5AD86707E2",
+    "entryCount": 97,
+    "verifiedWebAssets": 90,
+    "forbiddenEntries": 0,
+    "assetMismatches": 0,
+    "containsDex": true,
+    "package": "kr.voyage.independent",
+    "version": "1.0.2",
+    "minAndroid": 26,
+    "networkPermission": false,
+    "nativeInstallScope": "Native installation and play observations, with tested APK hash, are recorded separately in manual-verification.json."
+  },
+  "verification": {
+    "executedAt": "2026-11-16T08:52:46.828Z",
+    "node": "v24.20.0",
+    "suites": 28,
+    "tests": 156,
+    "passed": 156,
+    "failed": 0,
+    "skipped": 0,
+    "exitCode": 0,
+    "scope": [
+      "Extracted Korean data and 24,737 script instructions",
+      "Original-function differential fixtures for dice, new-game placement, navigation, supplies, combat, economics and script arithmetic",
+      "Independent navigation, trading, supply/unloading, shipyard, recruitment, appointments, equipment, contracts, gambling, battle, spoils and save/restore",
+      "Six original story endings with test-supplied travel, fame and battle prerequisites",
+      "Seven royal quest families, debt collection and actual A* sea travel",
+      "All 130 port arrivals and 889 building paths"
+    ],
+    "limits": [
+      "Tests of story endings supply progression prerequisites; these are not six complete human playthroughs.",
+      "NPC global routing and offscreen combat use independent pathfinding and scheduling; they are not instruction-identical to the DOS runtime.",
+      "Original-function comparisons validate recorded inputs only, not every possible game state.",
+      "All 101 town layouts were reviewed in an overview gallery; exhaustive dialogue and form bounds were checked in a browser harness. This does not cover every device.",
+      "Android emulator and responsive UI observations are recorded separately in manual-verification.json."
+    ],
+    "command": "node --test --test-reporter=tap analysis.test.mjs battle-grid.test.mjs battle-spoils.test.mjs blackjack.test.mjs building-hours.test.mjs combat.test.mjs consumption.test.mjs dice.test.mjs duel-session.test.mjs economy.test.mjs game.test.mjs integration-regressions.test.mjs national-affairs.test.mjs naval-battle.test.mjs navigation-global.test.mjs navigation-playthrough.test.mjs navigation.test.mjs new-game.test.mjs port-services.test.mjs royal-quests.test.mjs shared-quests.test.mjs shipyard.test.mjs shore.test.mjs story-endings.test.mjs story-playthrough.test.mjs story-vm.test.mjs town-camera.test.mjs voyage-systems.test.mjs"
+  },
+  "responsive": [
+    {
+      "viewport": [
+        320,
+        568
+      ],
+      "messages": 4302,
+      "facilities": 889,
+      "towns": 130,
+      "errors": [],
+      "portraits": 128,
+      "forms": 98,
+      "p95RenderMs": 0.5999999642372131,
+      "maxRenderMs": 15.100000023841858,
+      "durationMs": 3439.399999976158
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "messages": 4302,
+      "facilities": 889,
+      "towns": 130,
+      "errors": [],
+      "portraits": 128,
+      "forms": 98,
+      "p95RenderMs": 0.5,
+      "maxRenderMs": 28.69999998807907,
+      "durationMs": 3152.600000023842
+    },
+    {
+      "viewport": [
+        568,
+        320
+      ],
+      "messages": 4302,
+      "facilities": 889,
+      "towns": 130,
+      "errors": [],
+      "portraits": 128,
+      "forms": 98,
+      "scrollableFacilities": 100,
+      "p95RenderMs": 0.5,
+      "maxRenderMs": 44,
+      "durationMs": 3496.699999988079
+    },
+    {
+      "viewport": [
+        640,
+        336
+      ],
+      "messages": 4302,
+      "facilities": 889,
+      "towns": 130,
+      "errors": [],
+      "portraits": 128,
+      "forms": 98,
+      "scrollableFacilities": 100,
+      "p95RenderMs": 0.6000000238418579,
+      "maxRenderMs": 73.79999995231628,
+      "durationMs": 3722.199999988079
+    },
+    {
+      "viewport": [
+        844,
+        390
+      ],
+      "messages": 4302,
+      "facilities": 889,
+      "towns": 130,
+      "errors": [],
+      "portraits": 128,
+      "forms": 98,
+      "p95RenderMs": 0.5,
+      "maxRenderMs": 23.30000001192093,
+      "durationMs": 3518.199999988079
+    }
+  ],
+  "manual": {
+    "checkedAt": "2026-11-16T09:04:49.344Z",
+    "version": "1.0.2",
+    "apkSha256": "8BE2706442563ED8D456FD147533D096A85494DEC750E9A526BB3E5AD86707E2",
+    "android": {
+      "platform": "MuMu Android emulator on Windows",
+      "installed": true,
+      "physicalPhoneTested": false,
+      "observations": [
+        "Installed the updated APK and observed version 1.0.2 on its title screen.",
+        "All six save slots were visible in a two-column landscape layout, with title and close button inside the viewport.",
+        "Loaded the existing Joao save in Lisbon, 17 May 1522 09:00. Manual save slots were not overwritten.",
+        "Verified the wider default town camera, then pressed minus to reach the widest setting.",
+        "Tapped the visible market building at the widest setting. The character walked to its entrance and the enter-market action appeared.",
+        "Entered the market, advanced both no-ship dialogue messages, and returned to town with the HUD and dock visible.",
+        "Pressed plus and observed the default wide setting restored."
+      ]
+    },
+    "browser": {
+      "viewports": [
+        [
+          320,
+          568
+        ],
+        [
+          390,
+          844
+        ],
+        [
+          568,
+          320
+        ],
+        [
+          640,
+          336
+        ],
+        [
+          844,
+          390
+        ]
+      ],
+      "perViewport": {
+        "ports": 130,
+        "facilities": 889,
+        "messages": 4302,
+        "forms": 98
+      },
+      "method": "Rendered actual application components; checked viewport bounds, portrait ratio, control reachability by scrolling each input/action into view, fixed footer bounds and ancestor touch-action restrictions.",
+      "observations": [
+        "At 640x336, all four supply rows and their eight load/unload actions were visible together.",
+        "Selected food loading, used the quantity form with MAX and fixed commit controls, then loaded 10 food. The fixture gold changed from 100000 to 99810 and cargo from 0 to 10/80.",
+        "Viewed the ship order form at 844x390 and rotated to 390x844; name, material and price inputs remained accessible and the order action remained fixed.",
+        "Viewed all six pub actions at 390x844. At 568x320, used the lower-menu control to reach the final actions while exit stayed visible."
+      ]
+    },
+    "limits": [
+      "Viewport checks are automated DOM geometry checks, not a manual reading of every dialogue.",
+      "The current Android session validates installation, save restore, town camera, walking, building entry and dialogue; it is not six complete campaign playthroughs.",
+      "No physical Android phone was tested."
+    ]
+  }
+}
