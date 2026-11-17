@@ -1,26 +1,26 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.5",
   "apk": {
-    "time": "2026-11-16T08:56:46.2019952Z",
-    "apkBytes": 25492554,
-    "sha256": "8BE2706442563ED8D456FD147533D096A85494DEC750E9A526BB3E5AD86707E2",
-    "entryCount": 97,
-    "verifiedWebAssets": 90,
+    "time": "2026-11-17T04:46:13.0771678Z",
+    "apkBytes": 25513703,
+    "sha256": "CA6C82124FA4D370DE2E1497D5B77673E2A9CD1E34BB8399F261D60CCAB0BEA6",
+    "entryCount": 106,
+    "verifiedWebAssets": 99,
     "forbiddenEntries": 0,
     "assetMismatches": 0,
     "containsDex": true,
     "package": "kr.voyage.independent",
-    "version": "1.0.2",
+    "version": "1.0.5",
     "minAndroid": 26,
     "networkPermission": false,
     "nativeInstallScope": "Native installation and play observations, with tested APK hash, are recorded separately in manual-verification.json."
   },
   "verification": {
-    "executedAt": "2026-11-16T08:52:46.828Z",
+    "executedAt": "2026-11-17T04:46:53.786Z",
     "node": "v24.20.0",
-    "suites": 28,
-    "tests": 156,
-    "passed": 156,
+    "suites": 33,
+    "tests": 176,
+    "passed": 176,
     "failed": 0,
     "skipped": 0,
     "exitCode": 0,
@@ -30,33 +30,20 @@
       "Independent navigation, trading, supply/unloading, shipyard, recruitment, appointments, equipment, contracts, gambling, battle, spoils and save/restore",
       "Six original story endings with test-supplied travel, fame and battle prerequisites",
       "Seven royal quest families, debt collection and actual A* sea travel",
-      "All 130 port arrivals and 889 building paths"
+      "All 130 port arrivals and 889 building paths",
+      "Real-time battle movement, projectiles, ammunition, fleet AI, flagship duel and deterministic save/restore",
+      "Atomic game editor, speaker and attendant portraits, fleet hail reply and sea camera bounds"
     ],
     "limits": [
       "Tests of story endings supply progression prerequisites; these are not six complete human playthroughs.",
       "NPC global routing and offscreen combat use independent pathfinding and scheduling; they are not instruction-identical to the DOS runtime.",
       "Original-function comparisons validate recorded inputs only, not every possible game state.",
       "All 101 town layouts were reviewed in an overview gallery; exhaustive dialogue and form bounds were checked in a browser harness. This does not cover every device.",
-      "Android emulator and responsive UI observations are recorded separately in manual-verification.json."
+      "Versioned release validation records the exact browser and Android observations and their limits."
     ],
-    "command": "node --test --test-reporter=tap analysis.test.mjs battle-grid.test.mjs battle-spoils.test.mjs blackjack.test.mjs building-hours.test.mjs combat.test.mjs consumption.test.mjs dice.test.mjs duel-session.test.mjs economy.test.mjs game.test.mjs integration-regressions.test.mjs national-affairs.test.mjs naval-battle.test.mjs navigation-global.test.mjs navigation-playthrough.test.mjs navigation.test.mjs new-game.test.mjs port-services.test.mjs royal-quests.test.mjs shared-quests.test.mjs shipyard.test.mjs shore.test.mjs story-endings.test.mjs story-playthrough.test.mjs story-vm.test.mjs town-camera.test.mjs voyage-systems.test.mjs"
+    "command": "node --test --test-reporter=tap analysis.test.mjs battle-grid.test.mjs battle-spoils.test.mjs blackjack.test.mjs building-hours.test.mjs combat.test.mjs consumption.test.mjs dice.test.mjs duel-session.test.mjs economy.test.mjs editor-portrait-hail.test.mjs game.test.mjs integration-regressions.test.mjs landscape-geometry.test.mjs national-affairs.test.mjs naval-battle.test.mjs navigation-global.test.mjs navigation-playthrough.test.mjs navigation.test.mjs new-game.test.mjs port-services.test.mjs realtime-battle.test.mjs realtime-integration.test.mjs royal-quests.test.mjs sea-camera.test.mjs shared-quests.test.mjs shipyard.test.mjs shore.test.mjs story-endings.test.mjs story-playthrough.test.mjs story-vm.test.mjs town-camera.test.mjs voyage-systems.test.mjs"
   },
   "responsive": [
-    {
-      "viewport": [
-        320,
-        568
-      ],
-      "messages": 4302,
-      "facilities": 889,
-      "towns": 130,
-      "errors": [],
-      "portraits": 128,
-      "forms": 98,
-      "p95RenderMs": 0.5999999642372131,
-      "maxRenderMs": 15.100000023841858,
-      "durationMs": 3439.399999976158
-    },
     {
       "viewport": [
         390,
@@ -67,10 +54,10 @@
       "towns": 130,
       "errors": [],
       "portraits": 128,
-      "forms": 98,
-      "p95RenderMs": 0.5,
-      "maxRenderMs": 28.69999998807907,
-      "durationMs": 3152.600000023842
+      "forms": 99,
+      "p95RenderMs": 0.699999988079071,
+      "maxRenderMs": 24.69999998807907,
+      "durationMs": 3772.699999988079
     },
     {
       "viewport": [
@@ -82,27 +69,11 @@
       "towns": 130,
       "errors": [],
       "portraits": 128,
-      "forms": 98,
-      "scrollableFacilities": 100,
-      "p95RenderMs": 0.5,
-      "maxRenderMs": 44,
-      "durationMs": 3496.699999988079
-    },
-    {
-      "viewport": [
-        640,
-        336
-      ],
-      "messages": 4302,
-      "facilities": 889,
-      "towns": 130,
-      "errors": [],
-      "portraits": 128,
-      "forms": 98,
+      "forms": 99,
       "scrollableFacilities": 100,
       "p95RenderMs": 0.6000000238418579,
-      "maxRenderMs": 73.79999995231628,
-      "durationMs": 3722.199999988079
+      "maxRenderMs": 48.10000002384186,
+      "durationMs": 3826.099999964237
     },
     {
       "viewport": [
@@ -114,36 +85,49 @@
       "towns": 130,
       "errors": [],
       "portraits": 128,
-      "forms": 98,
-      "p95RenderMs": 0.5,
-      "maxRenderMs": 23.30000001192093,
-      "durationMs": 3518.199999988079
+      "forms": 99,
+      "p95RenderMs": 0.5999999642372131,
+      "maxRenderMs": 38.5,
+      "durationMs": 3604.800000011921
+    }
+  ],
+  "labels": [
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "visits": 889,
+      "labels": 3329,
+      "errors": []
+    },
+    {
+      "viewport": [
+        844,
+        390
+      ],
+      "visits": 889,
+      "labels": 2179,
+      "errors": []
     }
   ],
   "manual": {
-    "checkedAt": "2026-11-16T09:04:49.344Z",
-    "version": "1.0.2",
-    "apkSha256": "8BE2706442563ED8D456FD147533D096A85494DEC750E9A526BB3E5AD86707E2",
+    "checkedAt": "2026-11-17T04:50:41.148Z",
+    "version": "1.0.5",
+    "apkSha256": "CA6C82124FA4D370DE2E1497D5B77673E2A9CD1E34BB8399F261D60CCAB0BEA6",
     "android": {
       "platform": "MuMu Android emulator on Windows",
-      "installed": true,
+      "finalApkInstalled": false,
       "physicalPhoneTested": false,
+      "interimVersion": "1.0.4",
+      "interimApkSha256": "2914AF5661B2CBEBB361C425A22094D78450F469658C455CAADC917DD551248D",
       "observations": [
-        "Installed the updated APK and observed version 1.0.2 on its title screen.",
-        "All six save slots were visible in a two-column landscape layout, with title and close button inside the viewport.",
-        "Loaded the existing Joao save in Lisbon, 17 May 1522 09:00. Manual save slots were not overwritten.",
-        "Verified the wider default town camera, then pressed minus to reach the widest setting.",
-        "Tapped the visible market building at the widest setting. The character walked to its entrance and the enter-market action appeared.",
-        "Entered the market, advanced both no-ship dialogue messages, and returned to town with the HUD and dock visible.",
-        "Pressed plus and observed the default wide setting restored."
+        "Installed interim 1.0.4 and observed its version on the title screen and the editor item tab.",
+        "The user stopped computer use with Escape before final 1.0.5 installation verification. No further native interaction was attempted."
       ]
     },
     "browser": {
       "viewports": [
-        [
-          320,
-          568
-        ],
         [
           390,
           844
@@ -151,10 +135,6 @@
         [
           568,
           320
-        ],
-        [
-          640,
-          336
         ],
         [
           844,
@@ -165,19 +145,27 @@
         "ports": 130,
         "facilities": 889,
         "messages": 4302,
-        "forms": 98
+        "forms": 99
       },
-      "method": "Rendered actual application components; checked viewport bounds, portrait ratio, control reachability by scrolling each input/action into view, fixed footer bounds and ancestor touch-action restrictions.",
+      "method": "Rendered application components, checked viewport bounds, portrait ratio and scroll reachability. Feature interactions used separate QA fixtures not included in the APK.",
       "observations": [
-        "At 640x336, all four supply rows and their eight load/unload actions were visible together.",
-        "Selected food loading, used the quantity form with MAX and fixed commit controls, then loaded 10 food. The fixture gold changed from 100000 to 99810 and cargo from 0 to 10/80.",
-        "Viewed the ship order form at 844x390 and rotated to 390x844; name, material and price inputs remained accessible and the order action remained fixed.",
-        "Viewed all six pub actions at 390x844. At 568x320, used the lower-menu control to reach the final actions while exit stayed visible."
+        "Fleet hail displayed Simon and an actual reply about sailing toward Lisbon; back and close actions remained available.",
+        "Edited gold 100000 to 1234567, swordplay 53 to 99, and added a dagger. Reviewed three changes, applied them, then reloaded and reopened the autosave from the title editor.",
+        "At 390x844, held movement and fire together: player moved from (20,20) to (20,23.29), ammunition 40 to 39, enemy hull 200 to 199.",
+        "Saved and reloaded the live battle; position, ammunition and enemy damage were preserved.",
+        "At 844x390, dragged/held the aim control with movement: player moved to y=23.39 and fired two projectiles. Manual aim missed, as expected for that aim direction.",
+        "Approached the marked enemy flagship, requested a duel, and continued attack/defence inputs through a terminal defeat without getting stuck.",
+        "London church sign stayed in front of scenery; tapping it entered the church.",
+        "A two-speaker dialogue rendered vendor art for the shopkeeper and portrait 3 for the named speaker, without a Joao fallback.",
+        "Stockholm Anna rendered portrait 112; Ceuta Anna rendered portrait 106. Both were visually checked in their actual tavern dialogue popups.",
+        "Sea camera at 844x390 showed London/Bristol/Antwerp in the widest setting; the London entry action worked.",
+        "The sea zoom setting persisted after reload, and the 390x844 sea view switched from very wide to wide with the plus button."
       ]
     },
     "limits": [
-      "Viewport checks are automated DOM geometry checks, not a manual reading of every dialogue.",
-      "The current Android session validates installation, save restore, town camera, walking, building entry and dialogue; it is not six complete campaign playthroughs.",
+      "Final APK 1.0.5 was built, signed and checked byte-for-byte against the tested web assets; final native installation/play was not completed after computer use was stopped.",
+      "Geometry audits are automated checks, not a manual reading of all dialogue.",
+      "Battle/editor manual tests use QA fixtures. Story-ending tests supply prerequisites; no claim of six complete manual campaign playthroughs.",
       "No physical Android phone was tested."
     ]
   }
