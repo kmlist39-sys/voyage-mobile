@@ -1,26 +1,26 @@
 {
-  "version": "1.0.5",
+  "version": "1.0.6",
   "apk": {
-    "time": "2026-11-17T04:46:13.0771678Z",
-    "apkBytes": 25513703,
-    "sha256": "CA6C82124FA4D370DE2E1497D5B77673E2A9CD1E34BB8399F261D60CCAB0BEA6",
-    "entryCount": 106,
-    "verifiedWebAssets": 99,
+    "time": "2026-11-17T05:22:42.9506456Z",
+    "apkBytes": 26775500,
+    "sha256": "8499AD3CDC78EBC0C8B1A1B4E8B815B8CEBBC145EBAC46B6E206FCE7F1A2136F",
+    "entryCount": 109,
+    "verifiedWebAssets": 102,
     "forbiddenEntries": 0,
     "assetMismatches": 0,
     "containsDex": true,
     "package": "kr.voyage.independent",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "minAndroid": 26,
     "networkPermission": false,
     "nativeInstallScope": "Native installation and play observations, with tested APK hash, are recorded separately in manual-verification.json."
   },
   "verification": {
-    "executedAt": "2026-11-17T04:46:53.786Z",
+    "executedAt": "2026-11-17T05:22:17.175Z",
     "node": "v24.20.0",
-    "suites": 33,
-    "tests": 176,
-    "passed": 176,
+    "suites": 34,
+    "tests": 182,
+    "passed": 182,
     "failed": 0,
     "skipped": 0,
     "exitCode": 0,
@@ -41,7 +41,7 @@
       "All 101 town layouts were reviewed in an overview gallery; exhaustive dialogue and form bounds were checked in a browser harness. This does not cover every device.",
       "Versioned release validation records the exact browser and Android observations and their limits."
     ],
-    "command": "node --test --test-reporter=tap analysis.test.mjs battle-grid.test.mjs battle-spoils.test.mjs blackjack.test.mjs building-hours.test.mjs combat.test.mjs consumption.test.mjs dice.test.mjs duel-session.test.mjs economy.test.mjs editor-portrait-hail.test.mjs game.test.mjs integration-regressions.test.mjs landscape-geometry.test.mjs national-affairs.test.mjs naval-battle.test.mjs navigation-global.test.mjs navigation-playthrough.test.mjs navigation.test.mjs new-game.test.mjs port-services.test.mjs realtime-battle.test.mjs realtime-integration.test.mjs royal-quests.test.mjs sea-camera.test.mjs shared-quests.test.mjs shipyard.test.mjs shore.test.mjs story-endings.test.mjs story-playthrough.test.mjs story-vm.test.mjs town-camera.test.mjs voyage-systems.test.mjs"
+    "command": "node --test --test-reporter=tap analysis.test.mjs battle-grid.test.mjs battle-spoils.test.mjs blackjack.test.mjs building-hours.test.mjs combat-presentation.test.mjs combat.test.mjs consumption.test.mjs dice.test.mjs duel-session.test.mjs economy.test.mjs editor-portrait-hail.test.mjs game.test.mjs integration-regressions.test.mjs landscape-geometry.test.mjs national-affairs.test.mjs naval-battle.test.mjs navigation-global.test.mjs navigation-playthrough.test.mjs navigation.test.mjs new-game.test.mjs port-services.test.mjs realtime-battle.test.mjs realtime-integration.test.mjs royal-quests.test.mjs sea-camera.test.mjs shared-quests.test.mjs shipyard.test.mjs shore.test.mjs story-endings.test.mjs story-playthrough.test.mjs story-vm.test.mjs town-camera.test.mjs voyage-systems.test.mjs"
   },
   "responsive": [
     {
@@ -56,8 +56,8 @@
       "portraits": 128,
       "forms": 99,
       "p95RenderMs": 0.699999988079071,
-      "maxRenderMs": 24.69999998807907,
-      "durationMs": 3772.699999988079
+      "maxRenderMs": 23,
+      "durationMs": 4250.5
     },
     {
       "viewport": [
@@ -71,9 +71,9 @@
       "portraits": 128,
       "forms": 99,
       "scrollableFacilities": 100,
-      "p95RenderMs": 0.6000000238418579,
-      "maxRenderMs": 48.10000002384186,
-      "durationMs": 3826.099999964237
+      "p95RenderMs": 0.699999988079071,
+      "maxRenderMs": 80.5,
+      "durationMs": 4564.5
     },
     {
       "viewport": [
@@ -86,9 +86,9 @@
       "errors": [],
       "portraits": 128,
       "forms": 99,
-      "p95RenderMs": 0.5999999642372131,
-      "maxRenderMs": 38.5,
-      "durationMs": 3604.800000011921
+      "p95RenderMs": 0.800000011920929,
+      "maxRenderMs": 24.19999998807907,
+      "durationMs": 4592.899999976158
     }
   ],
   "labels": [
@@ -112,22 +112,24 @@
     }
   ],
   "manual": {
-    "checkedAt": "2026-11-17T04:50:41.148Z",
-    "version": "1.0.5",
-    "apkSha256": "CA6C82124FA4D370DE2E1497D5B77673E2A9CD1E34BB8399F261D60CCAB0BEA6",
+    "checkedAt": "2026-11-17T05:28:23.653Z",
+    "version": "1.0.6",
+    "apkSha256": "8499AD3CDC78EBC0C8B1A1B4E8B815B8CEBBC145EBAC46B6E206FCE7F1A2136F",
     "android": {
       "platform": "MuMu Android emulator on Windows",
-      "finalApkInstalled": false,
+      "finalApkInstalled": true,
       "physicalPhoneTested": false,
-      "interimVersion": "1.0.4",
-      "interimApkSha256": "2914AF5661B2CBEBB361C425A22094D78450F469658C455CAADC917DD551248D",
       "observations": [
-        "Installed interim 1.0.4 and observed its version on the title screen and the editor item tab.",
-        "The user stopped computer use with Escape before final 1.0.5 installation verification. No further native interaction was attempted."
+        "Updated the existing independent app to 1.0.6 and observed the version on its title screen.",
+        "Opened all save slots and restored the existing automatic save: Joao, Ceuta, 4 June 1522 09:00, 34 gold, 15 crew. The pub rendered correctly. No manual save slot was overwritten."
       ]
     },
     "browser": {
       "viewports": [
+        [
+          844,
+          390
+        ],
         [
           390,
           844
@@ -135,10 +137,6 @@
         [
           568,
           320
-        ],
-        [
-          844,
-          390
         ]
       ],
       "perViewport": {
@@ -147,26 +145,21 @@
         "messages": 4302,
         "forms": 99
       },
-      "method": "Rendered application components, checked viewport bounds, portrait ratio and scroll reachability. Feature interactions used separate QA fixtures not included in the APK.",
       "observations": [
-        "Fleet hail displayed Simon and an actual reply about sailing toward Lisbon; back and close actions remained available.",
-        "Edited gold 100000 to 1234567, swordplay 53 to 99, and added a dagger. Reviewed three changes, applied them, then reloaded and reopened the autosave from the title editor.",
-        "At 390x844, held movement and fire together: player moved from (20,20) to (20,23.29), ammunition 40 to 39, enemy hull 200 to 199.",
-        "Saved and reloaded the live battle; position, ammunition and enemy damage were preserved.",
-        "At 844x390, dragged/held the aim control with movement: player moved to y=23.39 and fired two projectiles. Manual aim missed, as expected for that aim direction.",
-        "Approached the marked enemy flagship, requested a duel, and continued attack/defence inputs through a terminal defeat without getting stuck.",
-        "London church sign stayed in front of scenery; tapping it entered the church.",
-        "A two-speaker dialogue rendered vendor art for the shopkeeper and portrait 3 for the named speaker, without a Joao fallback.",
-        "Stockholm Anna rendered portrait 112; Ceuta Anna rendered portrait 106. Both were visually checked in their actual tavern dialogue popups.",
-        "Sea camera at 844x390 showed London/Bristol/Antwerp in the widest setting; the London entry action worked.",
-        "The sea zoom setting persisted after reload, and the 390x844 sea view switched from very wide to wide with the plus button."
-      ]
+        "At 844x390, fired a real simulated shell and inspected its smoke/trail during flight; ammunition fell 40 to 39.",
+        "Inspected the actual hit at 0.7 seconds: enemy hull 200 to 199, explosion, smoke, sparks and damage label. QA paused the simulation for these screenshots.",
+        "Tapped open water to set a fixed crosshair, then held Down+Space: the ship turned and moved while firing, ammunition reached 38.",
+        "Entered a duel by approaching the marked flagship. Checked character wind-up, thrust/slash, defence, damage and disabled controls during animation.",
+        "Played the duel through 20 exchanges and observed return to active sea battle.",
+        "Viewed the graphical duel in both landscape and portrait, with both full figures and action buttons visible.",
+        "Console error list was empty in the final QA tab."
+      ],
+      "method": "Actual application code and UI interactions; QA battle fixtures initialize a known scene and are not included in the APK."
     },
     "limits": [
-      "Final APK 1.0.5 was built, signed and checked byte-for-byte against the tested web assets; final native installation/play was not completed after computer use was stopped.",
-      "Geometry audits are automated checks, not a manual reading of all dialogue.",
-      "Battle/editor manual tests use QA fixtures. Story-ending tests supply prerequisites; no claim of six complete manual campaign playthroughs.",
-      "No physical Android phone was tested."
+      "Native Android testing covered update installation and restoring an existing save. The combat/duel interactions were tested in the browser, not on a physical phone.",
+      "Screen audits check geometry and control reachability; they are not a manual reading of all 4302 dialogues.",
+      "Full campaigns were not manually replayed. Generated duel bodies use male/female archetypes; the identity portraits are character-specific."
     ]
   }
 }
